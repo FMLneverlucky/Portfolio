@@ -1,57 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="images/burning elmo.png" />
-    <title>
-        Index
-    </title>
-
+    <title>ants ants ants</title>
 </head>
-
 <body>
-    <header>
-        <h1>
-            Portfolio
-        </h1>
-    </header>
-    <div class="navigation">
-        <div id="EduPage" class="button">
-            <a href="education.html">
-                About my education
-            </a>
+    <div class="header">
+        <h1>ANTS</h1>
+    </div>
+    <div class="introduction">
+        <p>Ants are insects.</p>
+        <p>They are all around us.</p>
+        <p>They like to snoop around and steal your food.</p>
+        <p>They hide in the walls.</p>
+        <p>They hide in the ground.</p>
+        <p>Watch out, there's ants on that cool branch you found.</p>
+        <p>This is a website purely to learn more about ants.</p>
+    </div>
+    <div class="subtopics">
+        <div id="navContainer">
+            <nav>
+                <ul id="menulist">
+                    <li><button id="page1btn">Types of ants</button></li>
+                    <li><button id="page2btn">Medical uses of ants</button></li>
+                    <li><button id="page3btn">Ant society and behaviour</button></li>
+                </ul>
+            </nav>
         </div>
-        <div id="HobbyPage" class="button">
-            <a href="hobby.html">
-                My hobbies
-            </a>
+        <div id="pageContainer">
+            <div class="subcontent" id="page1">
+                    <h3>Types of ants</h3>
+                    <ul id="typeList">
+                        <li>the chill ants</li>
+                        <li>the bug spray ants</li>
+                        <li>the spicy jabber ants</li>
+                        <li>ant conquerors</li>
+                        <li>ants that are just, well, red</li>
+                    </ul>
+            </div>
+            <div class="subcontent" id="page2">
+                    <h2>Ants and medicinal uses</h2>
+                    <p>Ants are not only insects that crawl all around the place. They can also use medically</p>
+                    <div class="subsubcontent">
+                        <button type="button" class="collapsible-header-button" id="Med_Pg_1">
+                            <h4 class="collapsible-header">Cordyceps
+                                <img src="images/arrow down.png" width="10" height="10">
+                            </h4>
+                        </button>
+                        <div class="collapsible-content" id="med-pg-1">
+                            <p>braink shrink buh</p>
+                        </div>
+                        <button type="button" class="collapsible-header-button" id="Med_Pg_2">
+                            <h4 class="collapsible-header">Stitching
+                                <img src="images/arrow down.png" width="10" height="10">
+                            </h4>
+                        </button>
+                        <div class="collapsible-content" id="med-pg-2">
+                            <p>shouldnt have slept at 7am</p>
+                        </div>
+                        <button type="button" class="collapsible-header-button" id="Med_Pg_3">
+                            <h4 class="collapsible-header">Antibiotics
+                                <img src="images/arrow down.png" width="10" height="10">
+                            </h4>
+                        </button>
+                        <div class="collapsible-content" id="med-pg-3">
+                            <p>big regretti spaghette</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="subcontent" id="page3">
+                    <h3>Ant colonies and behaviour</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V6IHEFA5Up8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Ant colonies consists of a queen and worker ants. A colony starts with a queen ant spawning and raising a group of worker ants. These worker ants are in charge of gathering food and feeding the queen so it can focus on reproducing and increasing their numbers. Ants communicate chemically, leaving phermones around their target for other worker ants. </p>
+            </div>
         </div>
     </div>
-    <div id="main_content">
-        <div class="picture">
-            <img src="images/pfp.jpg">
-        </div>
-        <div class="written_content">
-            <p>
-                <b>
-                    Name: 
-                </b>
-                Low Jing Jie
-            </p>
-            <p>
-                <b>
-                    Age: 
-                </b>
-                19
-            </p>
-            <p>
-                <b>
-                    Notable feature(s): 
-                </b>
-                Extremely short jdkdndirmfifn
-            </p>
-        </div>
+    <div class="ant-form">
+        <h2>
+            Find out your ant type here
+        </h2>
+        <form>
+            <div class="form-questions" id="qn1">
+                <label for="qn1">Do you stay up at night frequently?: </label>
+                <input type="radio" id="true" name="agree">yes</input>
+                <input type="radio" id="false" name="disagree"> no </input>
+            </div>
+            <div class="form-questions" id="qn2">
+                <label for="qn2">Can you adapt to your surroundings easily?: </label>
+                <input type="radio" id="true" name="agree">yes</input>
+                <input type="radio" id="false" name="disagree"> no </input>
+            </div>
+            <div class="form-questions" id="qn3">
+                <label for="qn3">What would be your prefered way protecting yourself?: </label>
+                <input type="radio" id="option1" name="option1" value="Acid Spray">Acid Spray</input>
+
+                <input type="radio" id="option2" name="option2" value="Brute Force"> Brute Force</input>
+
+                <input type="radio" id="option3" name="option3" value="Overwhelm">Overwhelm using numbers(having mates to join you)</input>
+
+                <input type="radio" id="option4" name="option4" > Scare them away </input><br>
+            </div>
+            <button type="button" id="form-submit">
+                Submit
+            </button>
+        </form>
     </div>
+
 </body>
 </html>
