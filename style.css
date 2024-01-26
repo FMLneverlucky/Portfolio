@@ -1,0 +1,150 @@
+body {
+    background-color: #deedd1;
+}
+
+.header
+{
+    text-align: center;
+    border:dashed;
+    margin: 1rem;
+}
+
+.introduction{
+    text-align:center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+#navContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+#pageContainer/*this has to be flex because if parent is not flex, child cannot be flex*/
+{
+    display: flex;
+    justify-content: center;
+}
+
+h2
+{
+    text-align: center;
+}
+
+.subcontent
+{
+    padding: 0 5vw;
+    text-align: center;
+}
+
+.collapsible-header-button
+{
+    display: inherit; /*under subsubcontent class
+    dont know how to explain, head empty but big brain at the same time*/
+    flex-basis: 100%;
+    padding: 0 15vw;
+    justify-content: center;
+}
+
+.subsubcontent
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.collapsible-content
+{
+    display: inherit;
+    flex-basis: 100%; /*have to define size here and not under subsubcontent because parent of subsubcontent is block -> defining basis for subsub will not work*/
+    justify-content: center;
+    text-align: center;
+    background-color: #c1e0a6;
+    border-style: groove;
+}
+
+/*questionaire related bit*/
+.ant-form
+{
+    display:flex;
+    justify-content: center;
+    margin: 3rem;
+    border-style: dashed;
+    background-color: #c1e0a6;
+    flex-wrap: wrap; /*header and questionaire squeeze on same line*/
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.form-questions
+{
+    display:inherit;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+label{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+#form-submit
+{
+    margin: 2rem;
+}
+/*questionaire bit end*/
+@media screen and (max-width: 540px) /*limit until 540*/
+{
+    body
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .header
+    {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    .introduction
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p
+    {
+        justify-content: center;
+        flex-basis: 100%;
+        margin: 0.5rem 0;
+    }
+    iframe
+    {
+        width: inherit;
+        height: inherit;
+    }
+    #qn3
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 800px) /*limit until 540*/
+{
+    iframe
+    {
+        width: inherit;
+        height: inherit;
+    }
+
+}
