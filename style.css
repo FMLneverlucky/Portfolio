@@ -70,43 +70,6 @@ h2
     border-style: groove;
 }
 
-/*questionaire related bit*/
-.ant-form
-{
-    display:flex;
-    justify-content: center;
-    margin: 3rem;
-    border-style: dashed;
-    background-color: #c1e0a6;
-    flex-wrap: wrap; /*header and questionaire squeeze on same line*/
-}
-
-form{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 2rem;
-}
-
-.form-questions
-{
-    display:inherit;
-    flex-basis: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-label{
-    display: flex;
-    flex-basis: 100%;
-    justify-content: center;
-}
-
-#form-submit
-{
-    margin: 2rem;
-}
 /*questionaire bit end*/
 @media screen and (max-width: 540px) /*limit until 540*/
 {
