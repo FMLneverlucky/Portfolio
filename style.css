@@ -1,3 +1,7 @@
+:root {
+    font-family: consolas, monospace;
+}
+
 body {
     background-color: #deedd1;
 }
@@ -9,8 +13,10 @@ body {
     margin: 1rem;
 }
 
-.introduction{
-    text-align:center;
+.intro
+{
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li{
