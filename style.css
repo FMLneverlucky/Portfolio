@@ -74,16 +74,25 @@ h2
 .img-navigation-container
 {
     display: flex;
-    justify-content: center;
-    margin: 0 3rem;
+    padding: 1em 3em;
     flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture1
+{
+    flex-basis: 80%;
+    padding: 3rem;
+    background-color: brown;
 }
 
 .button
 {
-    display: flex;
-    align-items: center;
-    flex-shrink: 50;
+    flex-basis: 5%;
+    padding: 3rem;
+
+    background-color: blue;
 }
 
 /*questionaire bit end*/
@@ -129,7 +138,7 @@ h2
 
     img /*constraint img to phone width -> hard coded but idk how else so O|<*/
     {
-        max-width: 5rem;
+        max-width: 9ch;
     }
 }
 @media screen and (max-width: 800px) /*limit until 540*/
