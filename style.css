@@ -42,6 +42,7 @@ h2
 
 .subcontent
 {
+    display: inherit;
     padding: 0 5vw;
     text-align: center;
 }
@@ -70,15 +71,31 @@ h2
     border-style: groove;
 }
 
+.img-navigation-container
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 3rem;
+    flex-basis: 100%;
+}
+
+.button
+{
+    display: flex;
+    align-items: center;
+    flex-shrink: 50;
+}
+
 /*questionaire bit end*/
 @media screen and (max-width: 540px) /*limit until 540*/
 {
+    
     body
     {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        min-width: 300px;
     }
     .header
     {
@@ -91,6 +108,13 @@ h2
         display: flex;
         flex-wrap: wrap;
     }
+
+    .img-navigation-container
+    {
+        width: inherit;
+        height: inherit;
+    }
+
     p
     {
         justify-content: center;
@@ -102,10 +126,10 @@ h2
         width: inherit;
         height: inherit;
     }
-    #qn3
+
+    img /*constraint img to phone width -> hard coded but idk how else so O|<*/
     {
-        display: flex;
-        justify-content: center;
+        max-width: 5rem;
     }
 }
 @media screen and (max-width: 800px) /*limit until 540*/
