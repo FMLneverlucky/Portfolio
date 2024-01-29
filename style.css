@@ -83,16 +83,22 @@ h2
 #picture1
 {
     flex-basis: 80%;
-    padding: 3rem;
+    padding: 0;
+    max-width: 90%;
     background-color: brown;
+}
+
+img /*constraint img to phone width -> hard coded but idk how else so O|<*/
+{
+    max-width: 95%;
 }
 
 .button
 {
     flex-basis: 5%;
-    padding: 3rem;
 
     background-color: blue;
+    /*overflow: clip;*/
 }
 
 /*questionaire bit end*/
@@ -136,10 +142,6 @@ h2
         height: inherit;
     }
 
-    img /*constraint img to phone width -> hard coded but idk how else so O|<*/
-    {
-        max-width: 9ch;
-    }
 }
 @media screen and (max-width: 800px) /*limit until 540*/
 {
