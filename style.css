@@ -60,6 +60,9 @@ h2
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border: dashed;
 }
 .collapsible-content
 {
@@ -85,7 +88,7 @@ h2
     flex-basis: 80%;
     padding: 0;
     max-width: 90%;
-    background-color: brown;
+    background-color: #c1e0a6;
 }
 
 img /*constraint img to phone width -> hard coded but idk how else so O|<*/
@@ -97,8 +100,13 @@ img /*constraint img to phone width -> hard coded but idk how else so O|<*/
 {
     flex-basis: 5%;
 
-    background-color: blue;
+    background-color: #93c568;
     /*overflow: clip;*/
+}
+
+.contacts
+{
+    text-align: center;
 }
 
 /*questionaire bit end*/
